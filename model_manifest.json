@@ -1,0 +1,14 @@
+{
+  "models": {
+    "model_float32.tflite": {
+      "version": "1.0",
+      "url": "https://github.com/Ayush-Mann-0/Road-Sign-Detection-and-Identification/releases/download/1.0/model_float32.tflite",
+      "checksum": "f312fad9f01e48c823271d360d543aa936ff08f891f0270b6178bf6cc5ab5dc6"
+    },
+    "model_float16.tflite": {
+      "version": "1.0",
+      "url": "https://github.com/Ayush-Mann-0/Road-Sign-Detection-and-Identification/releases/download/1.0/model_float16.tflite",
+      "checksum": "f312fad9f01e48c823271d360d543aa936ff08f891f0270b6178bf6cc5ab5dc6"
+    }
+  }
+}
