@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface">
+
+    <!-- Welcome Title -->
+    <TextView
+        android:id="@+id/welcomeTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/app_logo_desc"
+        android:textAppearance="@style/TextAppearance.App.Headline1"
+        android:textColor="@color/text_primary"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/welcomeSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/how_it_works_brief"
+        android:textAppearance="@style/TextAppearance.App.Body1"
+        android:textColor="@color/text_secondary"
+        app:layout_constraintTop_toBottomOf="@id/welcomeTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp" />
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/welcomeLogo"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/app_logo"
+        app:layout_constraintTop_toBottomOf="@id/welcomeSubtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="48dp"
+        android:contentDescription="@string/app_logo_desc" />
+
+    <!-- Feature Highlights (using horizontal chain) -->
+    <TextView
+        android:id="@+id/featureFast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fast_analysis"
+        android:textAppearance="@style/TextAppearance.App.Body2"
+        android:textColor="@color/accent"
+        android:gravity="center"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintTop_toBottomOf="@id/welcomeLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/featureAccuracy"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/featureAccuracy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/offline_capable"
+        android:textAppearance="@style/TextAppearance.App.Body2"
+        android:textColor="@color/secondary"
+        android:gravity="center"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintTop_toBottomOf="@id/welcomeLogo"
+        app:layout_constraintStart_toEndOf="@id/featureFast"
+        app:layout_constraintEnd_toStartOf="@+id/featureSecure"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/featureSecure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/secure_processing"
+        android:textAppearance="@style/TextAppearance.App.Body2"
+        android:textColor="@color/slate_blue"
+        android:gravity="center"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintTop_toBottomOf="@id/welcomeLogo"
+        app:layout_constraintStart_toEndOf="@id/featureAccuracy"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- Get Started Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGetStarted"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:text="@string/continue_btn"
+        style="@style/Widget.App.PrimaryButton"
+        app:layout_constraintTop_toBottomOf="@id/featureFast"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Footer -->
+    <TextView
+        android:id="@+id/footerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/copyright_and_version"
+        android:textAppearance="@style/TextAppearance.App.Body2"
+        android:textColor="@color/text_disabled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="24dp"
+        android:gravity="center" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

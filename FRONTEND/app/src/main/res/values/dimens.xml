@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="button_height">56dp</dimen>
+    <dimen name="button_icon_size">28dp</dimen>
+    <dimen name="button_margin">20dp</dimen>
+    <dimen name="button_text_size">18sp</dimen>
+    <dimen name="options_title_margin_top">48dp</dimen>
+    <dimen name="options_title_text_size">26sp</dimen>
+</resources>
+

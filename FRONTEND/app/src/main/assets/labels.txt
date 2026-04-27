@@ -1,0 +1,4 @@
+Hospital board
+Other sign board
+School board
+Traffic Signal

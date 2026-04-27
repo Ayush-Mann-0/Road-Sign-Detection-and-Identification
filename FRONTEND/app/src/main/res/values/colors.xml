@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ================================================= -->
+    <!-- COLORS.XML - LIGHT MODE                          -->
+    <!-- Modern Sophisticated Color Palette for Light UI  -->
+    <!-- ================================================= -->
+    
+    <!-- ============================================= -->
+    <!-- NAMED SEMANTIC COLORS                          -->
+    <!-- Primary, secondary, accent semantic colors     -->
+    <!-- ============================================= -->
+    
+    <!-- Primary semantic colors -->
+    <color name="primary">#6366F1</color>
+    <color name="primary_pressed">#4F46E5</color>
+    <color name="primary_light">#A5B4FC</color>
+    <color name="primary_subtle">#E0E7FF</color>
+    
+    <!-- Secondary semantic colors -->
+    <color name="secondary">#8B5CF6</color>
+    <color name="secondary_pressed">#7C3AED</color>
+    <color name="secondary_light">#C4B5FD</color>
+    <color name="secondary_subtle">#EDE9FE</color>
+    
+    <!-- Accent semantic colors -->
+    <color name="accent">#10B981</color>
+    <color name="accent_pressed">#059669</color>
+    <color name="accent_light">#6EE7B7</color>
+    <color name="accent_subtle">#D1FAE5</color>
+    
+    <!-- ============================================= -->
+    <!-- COLOR DEFINITIONS WITH HEX VALUES             -->
+    <!-- Hardcoded hex values for reference            -->
+    <!-- ============================================= -->
+    
+    <!-- ============================================= -->
+    <!-- DETECTION VISUALIZATION                        -->
+    <!-- ============================================= -->
+    <color name="bounding_box_color">#FF00FF00</color>
+    
+    <!-- ============================================= -->
+    <!-- PRIMARY COLOR FAMILY - BLUE                    -->
+    <!-- Professional yet approachable blue tones       -->
+    <!-- ============================================= -->
+    <color name="slate_blue">#6366F1</color>
+    <color name="slate_blue_pressed">#4F46E5</color>
+    <color name="slate_blue_light">#A5B4FC</color>
+    <color name="slate_blue_subtle">#E0E7FF</color>
+    
+    <!-- ============================================= -->
+    <!-- SECONDARY COLOR FAMILY - PURPLE                -->
+    <!-- Creative and modern purple accents             -->
+    <!-- ============================================= -->
+    <color name="soft_purple">#8B5CF6</color>
+    <color name="soft_purple_pressed">#7C3AED</color>
+    <color name="soft_purple_light">#C4B5FD</color>
+    <color name="soft_purple_subtle">#EDE9FE</color>
+    
+    <!-- ============================================= -->
+    <!-- ACCENT COLOR FAMILY - GREEN                    -->
+    <!-- Success and positive action colors             -->
+    <!-- ============================================= -->
+    <color name="sage_green">#10B981</color>
+    <color name="sage_green_pressed">#059669</color>
+    <color name="sage_green_light">#6EE7B7</color>
+    <color name="sage_green_subtle">#D1FAE5</color>
+    
+    <!-- ============================================= -->
+    <!-- NEUTRAL GRAY PALETTE                           -->
+    <!-- Clean and professional gray scale              -->
+    <!-- ============================================= -->
+    <color name="neutral_50">#FAFAFA</color>   <!-- Very light gray -->
+    <color name="neutral_100">#F5F5F5</color>  <!-- Light gray -->
+    <color name="neutral_200">#E5E5E5</color>  <!-- Medium light gray -->
+    <color name="neutral_300">#D4D4D4</color>  <!-- Medium gray -->
+    <color name="neutral_600">#525252</color>  <!-- Medium dark gray -->
+    <color name="neutral_800">#262626</color>  <!-- Dark gray -->
+    <color name="neutral_900">#171717</color>  <!-- Very dark gray -->
+    
+    <!-- ============================================= -->
+    <!-- APPLICATION SURFACES                           -->
+    <!-- Background and surface colors                  -->
+    <!-- ============================================= -->
+    <color name="surface">@color/neutral_50</color>
+    <color name="surface_elevated">#FFFFFF</color>
+    <color name="background_scrim">#80000000</color>
+    
+    <!-- ============================================= -->
+    <!-- BUTTON COLOR SYSTEM                           -->
+    <!-- Primary and secondary button styles            -->
+    <!-- ============================================= -->
+    <!-- Primary Buttons -->
+    <color name="primary_btn_bg">@color/primary</color>
+    <color name="primary_btn_text">#FFFFFF</color>
+    <color name="primary_btn_pressed">@color/primary_pressed</color>
+    
+    <!-- Secondary Buttons -->
+    <color name="secondary_btn_bg">@color/primary_subtle</color>
+    <color name="secondary_btn_text">@color/primary</color>
+    <color name="secondary_btn_pressed">@color/primary_light</color>
+    
+    <!-- ============================================= -->
+    <!-- FORM CONTROLS                                 -->
+    <!-- Sliders, switches, and input controls          -->
+    <!-- ============================================= -->
+    <!-- Slider Components -->
+    <color name="slider_active_track_color">@color/primary_btn_bg</color>
+    <color name="slider_inactive_track_color">@color/secondary_btn_bg</color>
+    <color name="slider_thumb_color">@color/primary_btn_bg</color>
+    
+    <!-- Switch Components -->
+    <color name="switch_thumb_normal">#FFFFFF</color>
+    <color name="switch_thumb_checked">@color/accent</color>
+    <color name="switch_track_off">@color/neutral_300</color>
+    <color name="switch_track_on">@color/accent_light</color>
+    
+    <!-- ============================================= -->
+    <!-- TYPOGRAPHY & TEXT HIERARCHY                   -->
+    <!-- Text colors for different use cases           -->
+    <!-- ============================================= -->
+    <color name="text_primary">@color/neutral_900</color>     <!-- Primary text -->
+    <color name="text_secondary">@color/neutral_600</color>   <!-- Secondary text -->
+    <color name="text_disabled">@color/neutral_300</color>     <!-- Disabled text -->
+    
+    <!-- ============================================= -->
+    <!-- ACCENT COLORS                                 -->
+    <!-- Special purpose accent colors                  -->
+    <!-- ============================================= -->
+    <color name="accent_primary">@color/secondary</color>
+    <color name="accent_success">@color/accent</color>
+    <color name="accent_warning">#F59E0B</color>
+    <color name="accent_error">#EF4444</color>
+    
+    <!-- ============================================= -->
+    <!-- STATUS INDICATORS                             -->
+    <!-- Online, away, busy, offline states            -->
+    <!-- ============================================= -->
+    <color name="status_online">#22C55E</color>
+    <color name="status_away">#F59E0B</color>
+    <color name="status_busy">#EF4444</color>
+    <color name="status_offline">@color/neutral_300</color>
+    
+    <!-- ============================================= -->
+    <!-- WARNING & ERROR COLORS                         -->
+    <!-- Attention-grabbing warning colors              -->
+    <!-- ============================================= -->
+    <color name="warning">#F59E0B</color>          <!-- Warning accent -->
+    <color name="warning_bg">#FEF3C7</color>        <!-- Warning background -->
+    <color name="warning_text">#92400E</color>      <!-- Warning text -->
+    
+    <!-- ============================================= -->
+    <!-- OVERLAY COLORS                                -->
+    <!-- Camera overlay and UI overlay colors          -->
+    <!-- ============================================= -->
+    <color name="overlay_text_color">#FFFFFF</color>       <!-- Overlay text -->
+    <color name="overlay_background">#80000000</color>     <!-- Semi-transparent overlay background -->
+    
+    <!-- ============================================= -->
+    <!-- LEGACY & SPECIAL COLORS                        -->
+    <!-- Maintained for backward compatibility          -->
+    <!-- ============================================= -->
+    <color name="indigo_500">#6366F1</color>
+    
+</resources>

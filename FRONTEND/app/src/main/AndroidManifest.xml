@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Camera permission -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- Storage permissions for different Android versions -->
+    <!-- For Android 12 and below (API 32 and below) -->
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" /> <!-- For Android 13+ (API 33+) - Granular media permissions -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" /> <!-- For Android 14+ (API 34+) - Selected Photos Access -->
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" /> <!-- Camera features -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RoadSignDetection">
+                <!-- Main activity -->
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Settings Activity -->
+        <activity
+            android:name=".OptionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" /> <!-- Image Detection Activity - Remove fixed orientation -->
+        <activity
+            android:name=".ImageDetectionActivity"
+            android:exported="false" /> <!-- Video Detection Activity - Remove fixed orientation -->
+        <activity
+            android:name=".VideoDetectionActivity"
+            android:exported="false" /> <!-- Live Detection Activity - Remove fixed orientation -->
+        <activity
+            android:name=".LiveDetectionActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

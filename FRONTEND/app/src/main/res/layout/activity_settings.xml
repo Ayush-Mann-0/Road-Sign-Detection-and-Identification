@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="32dp">
+
+        <!-- Header with Back Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Back"
+                android:src="@drawable/ic_arrow_back"
+                app:tint="@color/primary" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Settings"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:layout_marginStart="16dp" />
+
+        </LinearLayout>
+
+        <!-- Warning Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="16dp"
+            app:cardBackgroundColor="@color/warning_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_warning"
+                    app:tint="@color/warning"
+                    android:layout_marginEnd="16dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Changing these settings may affect detection performance or break the system. Modify with caution."
+                    android:textSize="14sp"
+                    android:textColor="@color/warning_text"
+                    android:fontFamily="@font/montserrat_medium_family"
+                    android:lineSpacingExtra="2dp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Model Selection Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Model Selection"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_marginBottom="16dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="@color/surface_elevated">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <RadioGroup
+                    android:id="@+id/modelSelectionGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/modelFloat16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Float16 Model (Default)"
+                        android:textSize="16sp"
+                        android:textColor="@color/primary"
+                        android:fontFamily="@font/montserrat_medium_family"
+                        android:layout_marginBottom="12dp"
+                        android:buttonTint="@color/primary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Optimized for performance\n• Faster inference\n• Lower memory usage\n• Good for most devices"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_secondary"
+                        android:fontFamily="@font/montserrat_regular_family"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginBottom="16dp"
+                        android:lineSpacingExtra="2dp" />
+
+                    <RadioButton
+                        android:id="@+id/modelFloat32"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Float32 Model (High Accuracy)"
+                        android:textSize="16sp"
+                        android:textColor="@color/primary"
+                        android:fontFamily="@font/montserrat_medium_family"
+                        android:layout_marginBottom="12dp"
+                        android:buttonTint="@color/primary" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• Maximum accuracy\n• Better for complex scenes\n• Higher memory usage\n• May be slower on some devices"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_secondary"
+                        android:fontFamily="@font/montserrat_regular_family"
+                        android:layout_marginStart="32dp"
+                        android:lineSpacingExtra="2dp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Detection Settings Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detection Settings"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_marginBottom="16dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="@color/surface_elevated">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Confidence Threshold -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Confidence Threshold"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary"
+                        android:fontFamily="@font/montserrat_medium_family"
+                        android:layout_marginBottom="8dp" />
+
+                    <SeekBar
+                        android:id="@+id/confidenceThreshold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="100"
+                        android:progress="30"
+                        android:progressTint="@color/primary"
+                        android:thumbTint="@color/primary" />
+
+                    <TextView
+                        android:id="@+id/confidenceValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="30%"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_secondary"
+                        android:fontFamily="@font/montserrat_regular_family"
+                        android:gravity="end"
+                        android:layout_marginTop="4dp" />
+
+                </LinearLayout>
+
+                <!-- Max Detections -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Maximum Detections"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary"
+                        android:fontFamily="@font/montserrat_medium_family"
+                        android:layout_marginBottom="8dp" />
+
+                    <SeekBar
+                        android:id="@+id/maxDetections"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="20"
+                        android:progress="10"
+                        android:progressTint="@color/primary"
+                        android:thumbTint="@color/primary" />
+
+                    <TextView
+                        android:id="@+id/maxDetectionsValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="10"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_secondary"
+                        android:fontFamily="@font/montserrat_regular_family"
+                        android:gravity="end"
+                        android:layout_marginTop="4dp" />
+
+                </LinearLayout>
+
+                <!-- Tracking Settings -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Object Tracking"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary"
+                        android:fontFamily="@font/montserrat_medium_family"
+                        android:layout_marginBottom="12dp" />
+
+                    <Switch
+                        android:id="@+id/trackingEnabled"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enable Object Tracking"
+                        android:checked="true" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Stabilizes detections across frames for moving scenarios"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_secondary"
+                        android:fontFamily="@font/montserrat_regular_family"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Performance Settings Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Performance Settings"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_marginBottom="16dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="@color/surface_elevated">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- GPU Acceleration -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <Switch
+                        android:id="@+id/gpuAcceleration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GPU Acceleration"
+                        android:checked="true" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Use GPU for faster inference (if available)"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_secondary"
+                        android:fontFamily="@font/montserrat_regular_family"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp" />
+
+                </LinearLayout>
+
+                <!-- Frame Rate Limit -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Frame Rate Limit (FPS)"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/primary"
+                        android:fontFamily="@font/montserrat_medium_family"
+                        android:layout_marginBottom="8dp" />
+
+                    <SeekBar
+                        android:id="@+id/frameRateLimit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="30"
+                        android:progress="10"
+                        android:progressTint="@color/primary"
+                        android:thumbTint="@color/primary" />
+
+                    <TextView
+                        android:id="@+id/frameRateValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="10 FPS"
+                        android:textSize="14sp"
+                        android:textColor="@color/text_secondary"
+                        android:fontFamily="@font/montserrat_regular_family"
+                        android:gravity="end"
+                        android:layout_marginTop="4dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"
+            android:paddingHorizontal="4dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/resetButton"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:paddingHorizontal="20dp"
+                android:text="Reset to Defaults"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:fontFamily="@font/montserrat_medium_family"
+                app:backgroundTint="@color/neutral_200"
+                app:cornerRadius="28dp"
+                app:rippleColor="@color/neutral_300"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/neutral_300"
+                android:letterSpacing="0.01"
+                android:elevation="2dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/saveButton"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:paddingHorizontal="20dp"
+                android:text="Save Settings"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary_btn_text"
+                android:fontFamily="@font/montserrat_medium_family"
+                app:backgroundTint="@color/primary"
+                app:cornerRadius="28dp"
+                app:rippleColor="@color/primary_pressed"
+                android:letterSpacing="0.01"
+                android:elevation="4dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

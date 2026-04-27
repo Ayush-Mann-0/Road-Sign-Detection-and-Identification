@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ============================================= -->
+    <!-- APP BRANDING & GENERAL INFO                   -->
+    <!-- ============================================= -->
+    <string name="app_name">RoadSign Detector</string>
+    <string name="app_logo_desc">Sign Board Detector</string>
+    <string name="copyright_and_version">© 2024 RoadSign Detector | AI by Ayush Mann</string>
+    
+    <!-- ============================================= -->
+    <!-- WELCOME & MAIN SCREEN                         -->
+    <!-- ============================================= -->
+    <string name="choose_detection_mode">Choose Detection Mode</string>
+    <string name="how_it_works_brief">Select your preferred detection method and let our AI analyze road signs with precision and speed</string>
+    <string name="info_text">Choose from Image, Video, or Live Camera detection to start identifying road signs instantly</string>
+    
+    <!-- ============================================= -->
+    <!-- DETECTION MODES                               -->
+    <!-- ============================================= -->
+    <string name="image_detection_title">Image Detection</string>
+    <string name="video_detection_title">Video Detection</string>
+    <string name="live_detection_title">Live Detection</string>
+    <string name="image_detection">Image Detection</string>
+    <string name="video_detection">Video Detection</string>
+    <string name="live_detection">Live Detection</string>
+    
+    <!-- Mode descriptions -->
+    <string name="live_label">Live Camera</string>
+    <string name="analyze_road_signs_in">Detect road signs in</string>
+    <string name="images">images</string>
+    <string name="videos">videos</string>
+    <string name="real_time_camera_analysis">Real-time road sign detection using camera</string>
+    <string name="image_detection_desc">Detect road signs in images</string>
+    
+    <!-- Tooltips -->
+    <string name="image_tooltip">Upload photos to detect road signs and traffic signals</string>
+    <string name="video_tooltip">Process videos to identify road signs throughout the footage</string>
+    <string name="live_tooltip">Use your camera for real-time road sign detection while driving</string>
+    
+    <!-- Feature benefits -->
+    <string name="fast_analysis">⚡ Lightning Fast</string>
+    <string name="accurate_results">🎯 High Accuracy</string>
+    <string name="secure_processing">🔒 Secure Processing</string>
+    <string name="offline_capable">📱 Works Offline</string>
+    
+    <!-- ============================================= -->
+    <!-- BUTTONS & ACTIONS                             -->
+    <!-- ============================================= -->
+    <string name="continue_btn">Continue</string>
+    <string name="select_mode">Select Mode</string>
+    <string name="try_again">Try Again</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="skip">Skip</string>
+    <string name="done">Done</string>
+    <string name="grant_permission">Grant Permission</string>
+    <string name="back_to_menu">← Back to Menu</string>
+    <string name="process_image">🔍 Detect Signs</string>
+    <string name="process_video">🎥 Analyze Video</string>
+    
+    <!-- ============================================= -->
+    <!-- IMAGE DETECTION SPECIFIC                      -->
+    <!-- ============================================= -->
+    <string name="select_image">Select Image</string>
+    <string name="select_an_image_to_get_started">📷 Select an image to detect road signs</string>
+    <string name="camera">Take Photo</string>
+    <string name="gallery">Choose from Gallery</string>
+    <string name="image_selected_ready_to_process">✓ Image loaded! Ready to detect road signs</string>
+    <string name="processing_image">🔄 Detecting road signs...</string>
+    <string name="ai_analyzing_image">🤖 AI is analyzing road signs in your image...</string>
+    <string name="no_road_signs_detected">❌ No road signs detected in this image</string>
+    <string name="detection_complete">🎯 Road sign detection complete!</string>
+    <string name="detection_results">📊 Detected Road Signs</string>
+    <string name="no_detections_found_text">No detections found</string>
+    
+    <!-- ============================================= -->
+    <!-- VIDEO DETECTION SPECIFIC                      -->
+    <!-- ============================================= -->
+    <string name="select_video">Select Video</string>
+    <string name="select_a_video_to_get_started">🎬 Select a video to analyze road signs</string>
+    <string name="record">Record Video</string>
+    <string name="video_loaded_ready_to_process">Video loaded! Press analyze to detect road signs throughout the video.</string>
+    <string name="processing_video">Analyzing video for road signs…</string>
+    <string name="processing_video_frames">Processing video frames for road signs...</string>
+    <string name="video_analysis_complete">Analysis complete! Road signs will appear during playback.</string>
+    <string name="video_processed">✓ Analyzed</string>
+    <string name="video_analysis_results">🎬 Video Analysis Results</string>
+    
+    <!-- ============================================= -->
+    <!-- LIVE DETECTION SPECIFIC                       -->
+    <!-- ============================================= -->
+    <string name="inference_0ms">Inference: 0ms</string>
+    <string name="live_detection_stats" formatted="false">%dms | Signs: %d</string>
+    <string name="live_detections_count">Road signs: %d</string>
+    
+    <!-- ============================================= -->
+    <!-- SETTINGS PAGE                                 -->
+    <!-- ============================================= -->
+    <string name="settings">Settings</string>
+    
+    <!-- ============================================= -->
+    <!-- STATUS & FEEDBACK                              -->
+    <!-- ============================================= -->
+    <string name="loading">Loading…</string>
+    <string name="loading_with_checkmark">✓ Loading...</string>
+    <string name="processing">Processing your request…</string>
+    <string name="analysis_complete">Analysis Complete</string>
+    <string name="error_occurred">An error occurred</string>
+    <string name="try_again_message">Please try again or contact support</string>
+    <string name="mode_selected">Detection mode selected successfully</string>
+    <string name="invalid_selection">Please select a valid detection mode</string>
+    <string name="feature_coming_soon">This feature is coming soon!</string>
+    <string name="selection_cleared">Selection cleared</string>
+    
+    <!-- ============================================= -->
+    <!-- PERMISSIONS                                    -->
+    <!-- ============================================= -->
+    <string name="camera_permission_required">Camera permission is required for live road sign detection</string>
+    <string name="storage_permission_required">Storage permission is needed to access your images and videos</string>
+    <string name="media_permission_required">Media access permission required</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="permissions_denied">Permissions denied</string>
+    <string name="permissions_required_for_feature">Permissions are required for this feature</string>
+    
+    <!-- Permission dialogs -->
+    <string name="permissions_required_title">Permissions Required</string>
+    <string name="permissions_rationale_message">This app needs %s permissions to work properly. Please grant the permissions to continue.</string>
+    <string name="grant_permissions_button">Grant</string>
+    <string name="permissions_permanently_denied_message">Some permissions are permanently denied. Please enable them in app settings to use this feature.</string>
+    <string name="go_to_settings_button">Go to Settings</string>
+    
+    <!-- ============================================= -->
+    <!-- SETTINGS DIALOGS & MESSAGES                   -->
+    <!-- ============================================= -->
+    <string name="error_initializing_views">Error initializing views</string>
+    <string name="error_loading_settings">Error loading settings</string>
+    <string name="error_saving_settings">Error saving settings</string>
+    <string name="reset_to_defaults_title">Reset to Defaults</string>
+    <string name="reset_to_defaults_message">Are you sure you want to reset all settings to their default values?</string>
+    <string name="reset_button">Reset</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="settings_reset_to_defaults">Settings reset to defaults</string>
+    <string name="settings_saved">✓ Saved</string>
+    <string name="settings_saved_successfully">Settings saved successfully</string>
+    
+    <!-- ============================================= -->
+    <!-- ERROR MESSAGES                                -->
+    <!-- ============================================= -->
+    <string name="camera_capture_failed">Camera capture failed. Please try again.</string>
+    <string name="no_image_captured">No image captured.</string>
+    <string name="failed_to_load_image">Failed to load image</string>
+    <string name="error_processing_video">Error processing video: %s</string>
+    <string name="please_wait_processing_complete">Please wait for processing to complete</string>
+    
+    <!-- ============================================= -->
+    <!-- PROGRESS & RESULTS FORMATTING                 -->
+    <!-- ============================================= -->
+    <string name="processing_frames_progress" formatted="false">Analyzing frames... %d/%d (%d%%)</string>
+    <string name="processed_in_time_ms">⚡ Analyzed in %dms</string>
+    <string name="video_processing_results" formatted="false">⚡ Total analysis: %dms | Frames: %d</string>
+    <string name="video_processing_complete_with_tracking">Video analysis complete! Smooth road sign tracking enabled during playback.</string>
+    
+    <!-- ============================================= -->
+    <!-- INFO & HELP                                   -->
+    <!-- ============================================= -->
+    <string name="detection_info_title">How Road Sign Detection Works</string>
+    <string name="detection_info_desc">Our AI uses advanced computer vision to detect and classify road signs in real-time using YOLO technology</string>
+    <string name="choose_option_hint">Please select a detection mode to start detecting road signs</string>
+    <string name="please_select_detection_mode">Please select a detection mode</string>
+    <string name="supported_formats">Supported formats: JPG, PNG for images; MP4, MOV for videos</string>
+    <string name="max_file_size">Maximum file size: 50MB for videos, 10MB for images</string>
+    <string name="processing_time">Average analysis time: 1-3 seconds per image</string>
+    
+    <!-- ============================================= -->
+    <!-- GENERAL RESULTS & STATUS                      -->
+    <!-- ============================================= -->
+    <string name="no_detections_found">No Road Signs Found</string>
+    
+    <!-- ============================================= -->
+    <!-- ACCESSIBILITY DESCRIPTIONS                    -->
+    <!-- ============================================= -->
+    <string name="image_detection_button">Image detection mode - detect road signs in photos</string>
+    <string name="video_detection_button">Video detection mode - analyze road signs in videos</string>
+    <string name="live_detection_button">Live camera detection mode - real-time road sign detection</string>
+    <string name="continue_button">Continue to next step button</string>
+    <string name="info_icon">Information icon</string>
+    
+    <!-- ============================================= -->
+    <!-- FOOTER & LEGAL                                -->
+    <!-- ============================================= -->
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="support">Support</string>
+</resources>

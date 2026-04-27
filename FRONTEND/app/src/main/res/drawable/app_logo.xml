@@ -1,0 +1,48 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+
+    <!-- Background circle with gradient feel -->
+    <path
+        android:fillColor="#6366F1"
+        android:pathData="M32,4C16.5,4 4,16.5 4,32s12.5,28 28,28s28,-12.5 28,-28S47.5,4 32,4z"/>
+
+    <!-- Inner circle for depth -->
+    <path
+        android:fillColor="#8B5CF6"
+        android:pathData="M32,8C18.7,8 8,18.7 8,32s10.7,24 24,24s24,-10.7 24,-24S45.3,8 32,8z"/>
+
+    <!-- AI Eye/Scanner symbol -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M32,18c-7.7,0 -14,6.3 -14,14s6.3,14 14,14s14,-6.3 14,-14S39.7,18 32,18zM32,40c-4.4,0 -8,-3.6 -8,-8s3.6,-8 8,-8s8,3.6 8,8S36.4,40 32,40z"/>
+
+    <!-- Central scanning point (using path instead of circle) -->
+    <path
+        android:fillColor="#6366F1"
+        android:pathData="M32,28A4,4 0 1,1 32,36A4,4 0 1,1 32,28Z"/>
+
+    <!-- Horizontal scanning lines (fixed: using proper stroke attributes) -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M20,32L24,32M40,32L44,32"/>
+
+    <!-- Vertical scanning lines (fixed: using proper stroke attributes) -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M32,20L32,24M32,40L32,44"/>
+
+    <!-- Corner brackets for scanner/camera effect -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M16,20L16,16L20,16M44,16L48,16L48,20M48,44L48,48L44,48M20,48L16,48L16,44"/>
+
+</vector>
