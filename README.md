@@ -1,4 +1,4 @@
-# Autonomous Sign Detection and Prediction
+# Real-Time Road Sign Detection and Identification on Mobile Devices
 
 [![Android](https://img.shields.io/badge/Platform-Android-green.svg)](https://www.android.com)
 [![Kotlin](https://img.shields.io/badge/Language-Kotlin-blue.svg)](https://kotlinlang.org/)
@@ -11,7 +11,7 @@
 
 > **Real-time Road Sign Detection Android Application using TensorFlow Lite**
 
-S.B.D (Sign Board Detection) is an Android application that leverages machine learning to detect and classify various road signs in real-time. The app offers three distinct detection modes and utilizes TensorFlow Lite for efficient on-device inference, making it perfect for driver assistance, traffic analysis, or educational purposes.
+Real-Time Road Sign Detection and Identification is an Android application that leverages machine learning to detect and classify various road signs in real-time. The app offers three distinct detection modes and utilizes TensorFlow Lite for efficient on-device inference, making it perfect for driver assistance, traffic analysis, or educational purposes.
 
 ## 🌟 Features
 
