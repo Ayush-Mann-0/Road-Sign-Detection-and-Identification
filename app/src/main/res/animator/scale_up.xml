@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="200"
+    android:interpolator="@android:interpolator/fast_out_slow_in">
+
+    <objectAnimator
+        android:propertyName="scaleX"
+        android:valueFrom="0.95"
+        android:valueTo="1.0"
+        android:valueType="floatType" />
+
+    <objectAnimator
+        android:propertyName="scaleY"
+        android:valueFrom="0.95"
+        android:valueTo="1.0"
+        android:valueType="floatType" />
+
+    <objectAnimator
+        android:propertyName="elevation"
+        android:valueFrom="2dp"
+        android:valueTo="6dp"
+        android:valueType="floatType" />
+
+</set>
